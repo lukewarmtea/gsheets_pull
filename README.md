@@ -2,7 +2,7 @@
 Automate downloading of CSV's from Google Sheets.
 
 ### Summary
-It is very useful to display Google Sheets location data in AGOL with pop-up info.  AGOL has a tool to dynamically link services to Google Sheets, however in some situations direct linking is not possible.  A solution is to download sheets as CSV's and upload as a AGOL services.  This script provides partial automation of the process by downloading predefined sheets as CSV's into a directory.
+It is very useful to display Google Sheets location data in AGOL with pop-up info.  AGOL has a tool to dynamically link services to Google Sheets, however in some situations direct linking is not possible.  A solution is to download sheets as CSV's and upload as AGOL services.  This script provides partial automation of the process by downloading predefined sheets as CSV's into a directory.
 
 ### Depends
 Install dependancies with:
@@ -24,9 +24,9 @@ workbookList = [
 Multiple Workbooks and sheets can be defined as well:
 ```python
 workbookList = [
-    ['1P7WOyJJHyGSLnIzOXOX3hkF2q9VYEuFmze9m9R8eRu4', ['Provider Splice Points', 'Locations' ]],
-    ['185nu72PQqFK24f5MmUBFC7NO6A5kTLKIe_VACI0Goko', ['Corridors-GIS']],
-    ['1AahIsT2b7k_9fHUaztH8J8b7NDGSrgDxawhSK6DPpRg', ['Internet Drops']]
+    ['1P7WOyJJHyGSLnIzOXOX3hkF2q9VYEuFmze9m9R8eRu4', ['vehicles', 'speed' ]],
+    ['185nu72PQqFK24f5MmUBFC7NO6A5kTLKIe_VACI0Goko', ['traffic']],
+    ['1AahIsT2b7k_9fHUaztH8J8b7NDGSrgDxawhSK6DPpRg', ['crashes']]
 ]
 ```    
 
@@ -37,3 +37,5 @@ Run for the first time with line
 uncommented to set up an authentication token.  The *depends* section above contains more information.
 
 Run the script and the CSV's will be created in a CSV subfolder along with a log file.
+
+A sample windows batch file has been included as an example to call python and run the script.  This will need to be edited for you particular environment.
