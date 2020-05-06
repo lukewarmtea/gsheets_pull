@@ -38,4 +38,4 @@ uncommented to set up an authentication token.  The *depends* section above cont
 
 Run the script and the CSV's will be created in a CSV subfolder along with a log file.
 
-A sample windows batch file has been included as an example to call python and run the script.  This will need to be edited for you particular environment.
+A sample windows batch file has been included as an example to call python and run the script.  This will need to be edited for your particular environment.
